@@ -1,0 +1,30 @@
+.aside {
+    grid-area: a;
+    background-color: #fff;
+    padding: 32px 0;
+    border-radius: 20px;
+  }
+  
+  .list {
+    list-style-type: none;
+  }
+
+  .item {
+    padding: 16px;
+  }
+
+  .item.active {
+    background-color: #F3F3F6;
+  }
+
+  .link {
+    color: #9798B4;
+  }
+
+  .link:hover {
+    color: #5458F7;
+  }
+
+  .item.active {
+    color: #5458F7;
+  }
