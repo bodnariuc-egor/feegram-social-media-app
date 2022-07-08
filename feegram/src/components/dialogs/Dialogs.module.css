@@ -1,20 +1,21 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    gap: 10px;
 }
 
-.dialogItems {
-    padding: 10px;
-}
-
-.dialog {
-    padding: 10px;
+.dialogsItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .messages {
-    padding: 10px;
-}
-
-.message {
-    padding: 15px;
+    padding: 20px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 15px;
 }

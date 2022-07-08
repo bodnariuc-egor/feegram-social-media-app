@@ -1,12 +1,14 @@
 import React from "react";
 import style from './Header.module.css';
+import {ReactComponent as Logo} from '../../assets/images/social-media-logo.svg'
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return(
         <header className={style.header}>
-            <a>
-                <img className={style.logo} src="../assets/images/social-media-logo.svg" alt="Social media logo" />
-            </a>
+            <NavLink to="/" >
+                <Logo />
+            </NavLink>
         </header>
     )
 }

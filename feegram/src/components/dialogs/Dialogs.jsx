@@ -1,19 +1,36 @@
 import React from "react";
-import style from './Dialogs.module.css'
+import { NavLink } from "react-router-dom";
+import style from './Dialogs.module.css';
+import DialogItem from "./DialogItem/DialogItem";
+import Message from "./Message/Message";
+
 
 const Dialogs = (props) => {
+
+    const dialogs = [
+        {id:1, name:'Arthur'},
+        {id:1, name:'John'},
+        {id:1, name:'Dutch'},
+        {id:1, name:'Hosea'},
+    ]
+
+    const dialogsElements = dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)
+
+    let messages = [
+        {id:1, m:'Hi'},
+        {id:2, m:'How are you?'},
+        {id:3, m:'I have a plan'},
+    ]
+
+    const messagesElements = messages.map(message => <Message className={style.message} message={message.m} id={message.id} />)
+
     return (
         <div className={style.dialogs}>
             <div className={style.dialogsItems}>
-                <div className={style.dialog}>Arthur</div>
-                <div className={style.dialog}>John</div>
-                <div className={style.dialog}>Dutch</div>
-                <div className={style.dialog}>Hosea</div>
+                {dialogsElements}
             </div>
             <div className={style.messages}>
-                <div className={style.message}>Hi</div>
-                <div className={style.message}>How are you?</div>
-                <div className={style.message}>I have a plan</div>
+                {messagesElements}
             </div>
         </div>
     )
