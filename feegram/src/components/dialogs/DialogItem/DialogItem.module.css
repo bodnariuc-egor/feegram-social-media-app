@@ -4,4 +4,14 @@
     height: 74px;
     background-color: #F2F7FF;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #FC5A5A;
+    margin-right: 10px;
 }
